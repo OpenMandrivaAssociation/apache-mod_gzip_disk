@@ -6,7 +6,7 @@
 Summary:	Serves pre-compressed HTML files to avoid compression on the fly
 Name:		apache-%{mod_name}
 Version:	0.03
-Release:	%mkrel 2
+Release:	%mkrel 3
 Group:		System/Servers
 License:	Apache License
 URL:		http://www.s5h.net/code/mod-gzip/
