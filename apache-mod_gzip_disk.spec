@@ -5,14 +5,13 @@
 
 Summary:	Serves pre-compressed HTML files to avoid compression on the fly
 Name:		apache-%{mod_name}
-Version:	0.03
-Release:	%mkrel 5
+Version:	0.5
+Release:	%mkrel 1
 Group:		System/Servers
 License:	Apache License
 URL:		http://www.s5h.net/code/mod-gzip/
 Source0:	http://www.s5h.net/code/mod-gzip/%{mod_name}-%{version}.tar.gz
 Source1:	%{mod_conf}
-Patch0:		mod_gzip_disk-format_not_a_string_literal_and_no_format_arguments.diff
 Requires(pre): rpm-helper
 Requires(postun): rpm-helper
 Requires(pre):	apache-conf >= 2.2.0
@@ -29,7 +28,7 @@ avoid compression on the fly.
 %prep
 
 %setup -q -n %{mod_name}
-%patch0 -p0
+
 cp %{SOURCE1} .
 
 %build
