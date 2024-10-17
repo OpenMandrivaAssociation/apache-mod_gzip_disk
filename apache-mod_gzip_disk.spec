@@ -9,7 +9,7 @@ Version:	0.5
 Release:	7
 Group:		System/Servers
 License:	Apache License
-URL:		http://www.s5h.net/code/mod-gzip/
+URL:		https://www.s5h.net/code/mod-gzip/
 Source0:	http://www.s5h.net/code/mod-gzip/%{mod_name}-%{version}.tar.gz
 Source1:	%{mod_conf}
 Requires(pre): rpm-helper
